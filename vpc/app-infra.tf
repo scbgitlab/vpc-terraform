@@ -54,7 +54,7 @@ resource "aws_rds_cluster_instance" "aurora_cluster_instance" {
 }
 
 resource "aws_db_subnet_group" "rds_pub_sbn_grp" {
-  sname                        = "rds_pub_sbn_grp"
+  name                        = "rds_pub_sbn_grp"
   description                 = "RDS subnet group."
   subnet_ids                  = ["${aws_subnet.pub_sbn_1a.id}", "${aws_subnet.pub_sbn_1b.id}"]
 }
