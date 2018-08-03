@@ -49,29 +49,3 @@ resource "aws_security_group" "php_http_sg" {
     Application = "AWS SG"
   }
 }
-
-resource "aws_security_group" "php_rds_sg" {
-  name          = "SG-RDS-CNC"
-  description   = "Allow access to the RDS server."
-  vpc_id        = "${aws_vpc.vpc.id}"
-
-  ingress {
-    from_port   = 3306
-    to_port     = 3306
-    protocol    = "TCP"
-    cidr_blocks = ["${var.rds_ing_cidr}"]
-  }
-
-  egress {
-    from_port   = 0
-    to_port     = 0
-    protocol    = "-1"
-    cidr_blocks = ["${var.rds_egr_cidr}"]
-  }
-
-  tags {
-    Name        = "SG-RDS-CNC"
-    Purpose     = "RDS connection."
-    Application = "AWS SG"
-  }
-}

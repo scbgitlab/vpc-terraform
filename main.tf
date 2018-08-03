@@ -21,6 +21,6 @@ module "vpc" {
   rds_instance_identifier   = "${var.rds_instance_identifier}"
   rds_ing_cidr              = "${var.rds_ing_cidr}"
   rds_egr_cidr              = "${var.rds_egr_cidr}"
-  rds_publicly_accessible   = "${var.rds_publicly_accessible}"
+  rds_publicly_accessible   = "${var.rds_publicly_accessible}" 
   rds_name_pub_sbn_grp      = "${var.rds_name_pub_sbn_grp}"
 }
