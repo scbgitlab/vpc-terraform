@@ -16,3 +16,4 @@ variable "rds_instance_class" {}
 variable "rds_cluster_identifier" {}
 variable "rds_instance_identifier" {}
 variable "rds_publicly_accessible" {}
+variable "rds_name_pub_sbn_grp" {}

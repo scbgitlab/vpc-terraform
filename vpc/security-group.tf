@@ -1,4 +1,4 @@
-resource "aws_security_group" "vpc_php_srv_sg" {
+resource "aws_security_group" "php_srv_sg" {
   name          = "SG-SRV-SSH"
   description   = "Allow SSH access to the PHP server."
   vpc_id        = "${aws_vpc.vpc.id}"

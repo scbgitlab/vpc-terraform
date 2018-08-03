@@ -113,3 +113,8 @@ variable "rds_skip_final_snapshot" {
   description = "RDS skip final snapshot option."
   default     = "true"
 }
+
+variable "rds_name_pub_sbn_grp" {
+  description = "RDS Public Subnet Name"
+  default = "rds_prod_pub_subnet"
+}
