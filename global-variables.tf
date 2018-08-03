@@ -116,5 +116,5 @@ variable "rds_skip_final_snapshot" {
 
 variable "rds_name_pub_sbn_grp" {
   description = "RDS Public Subnet Name"
-  default     = "RDS_Pub_Subnet"
+  default     = "rds_pub_subnet"
 }

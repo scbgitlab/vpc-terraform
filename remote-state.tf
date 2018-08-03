@@ -3,6 +3,6 @@ terraform {
     encrypt        = true
     bucket         = "terraformstate-scb"
     region         = "ap-southeast-1"
-    key            = "terraform-demo.tfstate"
+    key            = "terraform-demo-dev.tfstate"
   }
 }
